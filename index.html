@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bulgaristan Seçimi 2026</title>
+<meta name="description" content="Bulgaristan 1 Kasım 2026 cumhurbaşkanlığı seçimi ikinci turu: Yotova – Gyurov, bölge haritası ve sonuçları, Türkçe.">
+<style>
+:root{--bg:#F2F4F7;--card:#fff;--ink:#141B26;--mut:#5B6675;--line:#DDE2EA;--und:#D5DAE1;
+ --YOT:#1F8A6E;--GYU:#1F5FBF;--VAZ:#7B4FC9;--MECH:#D97706;--VEL:#A07C3B;--HRI:#B03A5B;--O:#8C95A3;--NONE:#3B4250;
+ --warn:#B45309;--warnbg:#FEF3C7;--live:#0F7B3E;--livebg:#DCFCE7;--test:#6D28D9;--testbg:#EDE9FE}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E131B;--card:#161D28;--ink:#E6EBF2;--mut:#98A3B3;--line:#2A3444;--und:#2F3947;
+ --YOT:#34B892;--GYU:#3D7BE0;--VAZ:#9B7BE0;--NONE:#A3A9B3;--warn:#FBBF24;--warnbg:#3A2A06;--live:#4ADE80;--livebg:#0B2E1A;--test:#C4B5FD;--testbg:#2A1F4A}}
+:root[data-theme="dark"]{--bg:#0E131B;--card:#161D28;--ink:#E6EBF2;--mut:#98A3B3;--line:#2A3444;--und:#2F3947;
+ --YOT:#34B892;--GYU:#3D7BE0;--VAZ:#9B7BE0;--NONE:#A3A9B3;--warn:#FBBF24;--warnbg:#3A2A06;--live:#4ADE80;--livebg:#0B2E1A;--test:#C4B5FD;--testbg:#2A1F4A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1180px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:0}h2{font-size:17px;margin:0 0 10px}h3{font-size:15px;margin:14px 0 6px}
+.top{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.sub{color:var(--mut);font-size:13px}
+.big{font-size:15px;color:var(--ink);font-weight:600;text-align:right}
+.badge{display:inline-block;padding:3px 10px;border-radius:99px;font-weight:700;font-size:12px;letter-spacing:.03em;vertical-align:3px}
+.b-sim{background:var(--warnbg);color:var(--warn)}.b-live{background:var(--livebg);color:var(--live)}.b-test{background:var(--testbg);color:var(--test)}
+.banner{border-radius:10px;padding:10px 14px;margin:0 0 14px;font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px;min-width:0}
+.grid2{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:14px}
+@media(max-width:900px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.duel{display:flex;justify-content:space-between;gap:12px;align-items:flex-end}
+.duel .side{min-width:0}.duel .side.r{text-align:right}
+.duel .nm{font-weight:700;font-size:18px}.duel .pc{font-weight:800;font-size:40px;line-height:1.05;font-variant-numeric:tabular-nums}
+.duel .vt{font-size:13px;color:var(--mut)}
+.duelbar{position:relative;height:30px;border-radius:8px;overflow:hidden;background:var(--und);display:flex;margin:10px 0 4px}
+.duelbar span{display:block;height:100%;transition:width .6s}
+.duelbar i{position:absolute;left:50%;top:-3px;bottom:-3px;border-left:2px dashed var(--ink);opacity:.55}
+.win{display:inline-block;margin-top:4px;padding:2px 8px;border-radius:99px;background:var(--livebg);color:var(--live);font-size:12px;font-weight:700}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--mut);margin-top:8px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.bar{height:14px;border-radius:5px;background:var(--line);overflow:hidden;position:relative}
+.bar span{display:block;height:100%}
+.pvrow{display:grid;grid-template-columns:170px minmax(0,1fr) 62px 86px;gap:8px;align-items:center;margin:7px 0;font-size:14px}
+.pvrow .s{font-variant-numeric:tabular-nums;text-align:right}
+.pvrow .v{font-size:12px;color:var(--mut);text-align:right;font-variant-numeric:tabular-nums}
+@media(max-width:520px){.pvrow{grid-template-columns:110px minmax(0,1fr) 54px}.pvrow .v{display:none}}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
+.tabs button.on{background:var(--ink);color:var(--card);border-color:var(--ink)}
+#map svg{width:100%;height:auto;display:block}
+#map path{stroke:var(--card);stroke-width:.8;cursor:pointer}#map path:hover,#map path.sel{stroke:var(--ink);stroke-width:2}
+.abroad{display:flex;align-items:center;gap:10px;margin-top:8px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:14px}
+.abroad.sel{outline:2px solid var(--ink)}.abroad b{display:inline-block;width:16px;height:16px;border-radius:4px}
+.tip{position:fixed;pointer-events:none;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;box-shadow:0 4px 16px rgba(0,0,0,.18);z-index:9;max-width:290px;display:none}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:5px 6px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--mut);font-weight:600}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+tr.click{cursor:pointer}tr.click:hover td{background:var(--bg)}
+.cand{display:grid;grid-template-columns:minmax(0,1fr) 76px 56px;gap:8px;align-items:center;margin:4px 0;font-size:14px}
+.cand .bar{height:8px}
+.scroll{max-height:520px;overflow:auto}
+a{color:var(--GYU)}
+.note{font-size:12px;color:var(--mut)}
+select{font:inherit;padding:4px 6px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);max-width:100%}
+</style>
+</head>
+<body>
+<main>
+<div class="top">
+  <div><h1>Bulgaristan Cumhurbaşkanlığı Seçimi 2026 <span id="badge" class="badge"></span></h1>
+  <div class="sub"><span id="subt"></span> · <span id="upd"></span></div></div>
+  <div class="big" id="prog"></div>
+</div>
+<div id="banner" class="banner" hidden></div>
+
+<div class="card"><h2 id="duelh">İkinci tur</h2><div id="duel"></div><div class="note" id="duelnote" style="margin-top:6px"></div></div>
+
+<div class="grid2">
+  <div class="card"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h2 style="margin:0">Bölge haritası</h2>
+    <div class="tabs" id="rtabs" style="margin:0"></div></div>
+    <div id="map" style="margin-top:8px"></div><div id="abroad"></div><div class="note" id="mapnote" style="margin-top:6px"></div></div>
+  <div class="card" id="panel"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h2 id="rname" style="margin:0"></h2>
+    <select id="rsel" aria-label="Seçim bölgesi seç"></select></div>
+    <div class="note" id="rstat" style="margin:6px 0 4px"></div>
+    <h3 id="rh1"></h3><div id="rcand"></div>
+    <h3 id="rh2"></h3><div id="rcand1"></div></div>
+</div>
+
+<div class="card"><h2>Tüm seçim bölgeleri</h2><div class="scroll"><table id="rtable"></table></div></div>
+<div class="card"><h2>Birinci tur (25 Ekim 2026), kesin sonuç</h2><div id="t1"></div><div class="note" id="t1note"></div></div>
+<div class="card note" id="foot"></div>
+</main>
+<div class="tip" id="tip"></div>
+<script>
+// Yayın sırasında build-site.js bu üç değeri doldurur.
+var BUILD = "04f367dc11";
+var DATABASE = "https://raw.githubusercontent.com/ulmocus-secim/bulgaristan-2026/main/";   // örn. https://raw.githubusercontent.com/<sahip>/<depo>/main/
+var REPO = "ulmocus-secim/bulgaristan-2026";           // örn. ulmocus-secim/bulgaristan-2026
+
+var CAND = {
+  YOT:{n:"İliana Yotova",s:"Yotova",d:"İliana Yotova – Kiril Valçev · bağımsız; İlerici Bulgaristan ve BSP destekli",c:"var(--YOT)",w:"https://en.wikipedia.org/wiki/Iliana_Iotova"},
+  GYU:{n:"Andrey Gyurov",s:"Gyurov",d:"Andrey Gyurov – Georgi Kandev · bağımsız; Batı yanlısı reformcu muhalefet destekli",c:"var(--GYU)",w:"https://en.wikipedia.org/wiki/Andrey_Gyurov"},
+  VAZ:{n:"Kostadin Kostadinov",s:"Kostadinov",d:"Vazrajdane (Yeniden Doğuş)",c:"var(--VAZ)",w:"https://en.wikipedia.org/wiki/Kostadin_Kostadinov"},
+  MECH:{n:"Radostin Vasilev",s:"Vasilev",d:"MEÇ",c:"var(--MECH)",w:"https://en.wikipedia.org/wiki/Radostin_Vasilev"},
+  VEL:{n:"İvelin Mihaylov",s:"Mihaylov",d:"Veliçie",c:"var(--VEL)",w:"https://en.wikipedia.org/wiki/Velichie"},
+  HRI:{n:"İvan Hristanov",s:"Hristanov",d:"bağımsız",c:"var(--HRI)",w:"https://en.wikipedia.org/wiki/2026_Bulgarian_presidential_election"},
+  OTH:{n:"Diğer adaylar",s:"Diğer",d:"",c:"var(--O)",w:"https://en.wikipedia.org/wiki/2026_Bulgarian_presidential_election"},
+  NONE:{n:"Kimseyi desteklemiyorum",s:"Kimseyi",d:"oy pusulasındaki “Не подкрепям никого” kutusu",c:"var(--NONE)",w:"https://en.wikipedia.org/wiki/None_of_the_above"}
+};
+function cInfo(k){return CAND[k]||{n:k,s:k,d:"",c:"var(--O)",w:WIKI}}
+var WIKI="https://en.wikipedia.org/wiki/2026_Bulgarian_presidential_election";
+// ЦИК seçim bölgesi (МИР) numaraları → Türkçe adlar
+var RN={"01":"Blagoevgrad","02":"Burgaz","03":"Varna","04":"Tırnova (Veliko Tarnovo)","05":"Vidin","06":"Vratsa","07":"Gabrovo","08":"Dobriç","09":"Kırcaali","10":"Köstendil",
+ "11":"Loveç","12":"Montana","13":"Pazarcık","14":"Pernik","15":"Pleven","16":"Filibe şehri (Plovdiv)","17":"Filibe ili (Plovdiv)","18":"Razgrad","19":"Rusçuk (Ruse)","20":"Silistre",
+ "21":"İslimiye (Sliven)","22":"Smolyan","23":"Sofya 23. bölge","24":"Sofya 24. bölge","25":"Sofya 25. bölge","26":"Sofya ili","27":"Eski Zağra (Stara Zagora)","28":"Tırgovişte","29":"Hasköy (Haskovo)",
+ "30":"Şumnu (Şumen)","31":"Yambol","32":"Yurt dışı"};
+var CODES=Object.keys(RN).sort();   // "01"…"32" (Object.keys sayısal anahtarları öne alır)
+var ILN={"BG-16":"Filibe (Plovdiv) · 16+17. bölgeler","BG-22":"Sofya şehri · 23+24+25. bölgeler"};
+
+var RAW=null, DATA=null, GEO=null, view=2, cur="23", curIl=null, lastSha=null;
+var fmt=new Intl.NumberFormat("tr-TR"), pct=function(x){return "%"+(Math.round(x*10)/10).toLocaleString("tr-TR")};
+var $=function(id){return document.getElementById(id)};
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+// ---------------- veri yükleme ----------------
+function getJSON(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()})}
+function loadData(){
+  var shaP = REPO ? fetch("https://api.github.com/repos/"+REPO+"/commits/main",{headers:{Accept:"application/vnd.github.sha"},cache:"no-store"})
+      .then(function(r){return r.ok?r.text():null}).catch(function(){return null}) : Promise.resolve(null);
+  return shaP.then(function(sha){
+    if(sha && sha===lastSha && RAW) return false;
+    var b = sha&&DATABASE ? DATABASE.replace(/main\/$/,"")+sha+"/" : (DATABASE||"./");
+    var q = sha?"":"?t="+Date.now();
+    var gp = GEO?Promise.resolve(GEO):getJSON(b+"geo.json"+q).catch(function(){return null});
+    return Promise.all([getJSON(b+"data.json"+q),gp]).then(function(a){
+      if(BUILD && a[0].build && a[0].build!==BUILD){var k="bg-rl";try{if(sessionStorage.getItem(k)!==a[0].build){sessionStorage.setItem(k,a[0].build);location.reload();return false}}catch(e){}}
+      lastSha=sha; RAW=a[0]; GEO=a[1]; return true;
+    });
+  });
+}
+
+// Bölge kaydı: {code, voters, voted, valid, none, v:{aday:oy}} ; 1. tur aynı biçimde RAW.t1.reg'den
+function t1reg(code){var x=RAW.t1.reg[code];return x?{code:code,voters:x[0],voted:x[1],valid:x[2],none:x[3],v:x[4]}:null}
+function reg(code){for(var i=0;i<DATA.reg.length;i++)if(DATA.reg[i].code===code)return DATA.reg[i];return null}
+function asReg(x){return{code:x[0],voters:x[2],voted:x[3],valid:x[4],none:x[5],v:x[6]}}
+
+// ---------------- simülasyon (gerçek sonuç yokken) ----------------
+function hash(s){var h=2166136261;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+var SEED=(Math.random()*1e9)|0;
+function rnd(key){var t=(hash(key)+SEED)>>>0;t+=0x6D2B79F5;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296}
+function gauss(key){var u=rnd(key+"a")||1e-9,v=rnd(key+"b");return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
+var SIM_LEN=300000, SIM_HOLD=30000, SIM_T0=Date.now()-SIM_LEN*.2;
+function simClock(){var t=(Date.now()-SIM_T0)%(SIM_LEN+SIM_HOLD);return Math.min(1,t/SIM_LEN)}
+// Çıkış noktası: her bölgenin gerçek 1. tur sonucu. Elenen adayların oyları iki aday arasında rastgele paylaştırılır (tahmin değildir).
+function simulate(){
+  var T=simClock(),nat={YOT:0,GYU:0},none=0,valid=0,voted=0,voters=0,done=0,split=.5+.08*gauss("split");
+  var regs=RAW.reg.map(function(x){
+    var c=x[0],b=t1reg(c),k="r"+c,delay=rnd(k+"d")*.35,speed=.45+rnd(k+"s")*.35,prog=Math.max(0,Math.min(1,(T-delay)/speed));
+    var turn=b.voted*Math.exp(.15*gauss(k+"t")),vt=Math.round(turn*prog),y=b.v.YOT||0,g=b.v.GYU||0,o=b.valid-b.none-y-g,s=Math.min(.9,Math.max(.1,split+.1*gauss(k+"s2")));
+    var wy=(y+o*s)*Math.exp(.06*gauss(k+"y")),wg=(g+o*(1-s))*Math.exp(.06*gauss(k+"g")),nn=.05*Math.exp(.3*gauss(k+"n")),vv=Math.round(vt*.995);
+    var Y=Math.round(vv*(1-nn)*wy/(wy+wg)),G=Math.round(vv*(1-nn)*wg/(wy+wg)),N=vv-Y-G;
+    nat.YOT+=Y;nat.GYU+=G;none+=N;valid+=vv;voted+=vt;voters+=b.voters;done+=prog;
+    return{code:c,voters:b.voters,voted:vt,valid:vv,none:N,v:vt?{YOT:Y,GYU:G}:{},prog:prog};
+  });
+  DATA={mode:"pre",simT:T,nat:{done:Math.round(done/regs.length*1000)/10,voters:voters,voted:voted,valid:valid,none:none,turnout:voters?Math.round(voted/voters*1000)/10:0},
+    cand:[["YOT",nat.YOT],["GYU",nat.GYU]].sort(function(a,b){return b[1]-a[1]}),reg:regs};
+}
+
+// ---------------- ana yarış ----------------
+function renderDuel(){
+  var n=DATA.nat,cs={};DATA.cand.forEach(function(c){cs[c[0]]=c[1]});
+  var y=cs.YOT||0,g=cs.GYU||0,tv=n.valid||0,two=y+g;
+  var py=tv?y/tv*100:0,pg=tv?g/tv*100:0;
+  var done=DATA.mode==="live"&&n.done>=100,win=done&&two?(y>g?"YOT":"GYU"):null;
+  // sol: muhalefet adayı, sağ: iktidar destekli aday (sitedeki lider portreleriyle aynı yön)
+  function side(k,p,v,r){var i=cInfo(k);return'<div class="side'+(r?' r':'')+'"><div class="nm" style="color:'+i.c+'"><a href="'+i.w+'" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">'+esc(i.n)+'</a></div>'+
+    '<div class="pc" style="color:'+i.c+'">'+(tv?pct(p):"–")+'</div><div class="vt">'+(tv?fmt.format(v)+" oy":"henüz oy yok")+'</div><div class="vt">'+esc(i.d)+'</div>'+(win===k?'<span class="win">✓ KAZANDI (ЦИК ön sonucu)</span>':'')+'</div>'}
+  $("duel").innerHTML='<div class="duel">'+side("GYU",pg,g,0)+side("YOT",py,y,1)+'</div>'+
+    '<div class="duelbar"><span style="width:'+pg+'%;background:var(--GYU)"></span><span style="flex:1"></span><span style="width:'+py+'%;background:var(--YOT)"></span><i></i></div>'+
+    '<div style="display:flex;justify-content:space-between;gap:8px" class="note"><span>'+(two?"İki aday arasında: Gyurov "+pct(g/two*100):"")+'</span><span>'+(n.none?"Kimseyi desteklemiyorum: "+fmt.format(n.none)+" ("+pct(n.none/tv*100)+")":"")+'</span><span>'+(two?"Yotova "+pct(y/two*100):"")+'</span></div>';
+  $("duelnote").textContent="Oranlar ЦИК'in yöntemiyle geçerli oylara göredir (“kimseyi desteklemiyorum” oyları dahil). İkinci turda en çok oyu alan aday kazanır; katılım şartı yoktur. Kesikli çizgi: %50.";
+}
+function renderTestList(){
+  var tv=DATA.nat.valid,list=DATA.cand.slice().concat(DATA.nat.none?[["NONE",DATA.nat.none]]:[]).sort(function(a,b){return (a[0]==="OTH")-(b[0]==="OTH")||b[1]-a[1]}),mx=Math.max(10,list[0][1]/tv*110);
+  $("duel").innerHTML=list.map(function(c){var i=cInfo(c[0]),p=c[1]/tv*100;
+    return'<div class="pvrow"><a href="'+i.w+'" target="_blank" rel="noopener" style="color:inherit">'+esc(i.n)+'</a><div class="bar"><span style="width:'+(p/mx*100)+'%;background:'+i.c+'"></span></div><span class="s">'+pct(p)+'</span><span class="v">'+fmt.format(c[1])+'</span></div>'}).join("");
+  $("duelnote").textContent="TEST: 25 Ekim birinci turunun kesin sonucu. Hiçbir aday geçerli oyların yarısını alamadığı (ve katılım %50'nin altında kaldığı) için ilk iki aday 1 Kasım'da ikinci tura kaldı.";
+}
+
+// ---------------- harita ve bölgeler ----------------
+function leader(r){if(!r)return null;var ks=Object.keys(r.v).filter(function(k){return r.v[k]>0}).sort(function(a,b){return r.v[b]-r.v[a]});if(!ks.length)return null;
+  var t=r.valid||1;return{k:ks[0],p:r.v[ks[0]]/t,m:(r.v[ks[0]]-(r.v[ks[1]]||0))/t}}
+function merged(codes,src){var o={code:codes.join("+"),voters:0,voted:0,valid:0,none:0,v:{}};codes.forEach(function(c){var r=src(c);if(!r)return;
+  o.voters+=r.voters;o.voted+=r.voted;o.valid+=r.valid;o.none+=r.none;Object.keys(r.v).forEach(function(k){o.v[k]=(o.v[k]||0)+r.v[k]})});return o}
+function src(){return view===1?t1reg:reg}
+function fill(r){var l=leader(r);if(!l)return["var(--und)",1];return[cInfo(l.k).c,Math.min(1,.3+l.m*3)]}
+function rTip(name,r){var h='<b>'+esc(name)+'</b><br>';if(!r||!r.valid)return h+"Henüz oy yok.";
+  var ks=Object.keys(r.v).filter(function(k){return k!=="OTH"}).sort(function(a,b){return r.v[b]-r.v[a]}).slice(0,3);
+  return h+ks.map(function(k){return'<span style="color:'+cInfo(k).c+'">●</span> '+esc(cInfo(k).n)+' '+pct(r.v[k]/r.valid*100)}).join("<br>")+
+    (r.code!=="32"&&r.voters?'<br><span class="note">Katılım: '+pct(r.voted/r.voters*100)+'</span>':'')}
+function ilName(x){return ILN[x[0]]||RN[x[1][0]]}
+function renderMap(){
+  if(!GEO){$("map").innerHTML='<div class="note">Harita yüklenemedi; bölgeler listeden seçilebilir.</div>'}
+  else{var s='<svg viewBox="0 0 '+GEO.w+' '+GEO.h+'" role="img" aria-label="Bulgaristan il haritası">';
+    GEO.L.forEach(function(x,i){var r=merged(x[1],src()),c=fill(r),sel=curIl===x[0]||(!curIl&&x[1].indexOf(cur)>=0);
+      s+='<path d="'+x[2]+'" fill="'+c[0]+'" fill-opacity="'+c[1].toFixed(2)+'" data-i="'+i+'"'+(sel?' class="sel"':'')+'/>'});
+    $("map").innerHTML=s+'</svg>';
+    $("map").querySelectorAll("path").forEach(function(p){var x=GEO.L[+p.getAttribute("data-i")];
+      p.addEventListener("mousemove",function(ev){tipShow(ev,rTip(ilName(x),merged(x[1],src())))});p.addEventListener("mouseleave",tipHide);
+      p.addEventListener("click",function(){openR(x[1][0],x[1].length>1?x[0]:null)})})}
+  var ab=src()("32"),c=fill(ab);
+  $("abroad").innerHTML='<div class="abroad'+(cur==="32"?' sel':'')+'" id="abbox"><b style="background:'+c[0]+';opacity:'+c[1].toFixed(2)+'"></b><span><strong>Yurt dışı</strong> (32. bölge, Türkiye dahil): '+
+    (ab&&ab.valid?Object.keys(ab.v).filter(function(k){return k!=="OTH"}).sort(function(a,b){return ab.v[b]-ab.v[a]}).slice(0,2).map(function(k){return esc(cInfo(k).s)+' '+pct(ab.v[k]/ab.valid*100)}).join(" · "):"henüz oy yok")+'</span></div>';
+  $("abbox").onclick=function(){openR("32",null)};
+  $("mapnote").textContent="Renk: ilde önde olan aday ("+(view===1?"25 Ekim 1. tur":"1 Kasım 2. tur")+"); koyuluk farkı gösterir. Gri: henüz oy yok. Sofya şehri (3 bölge) ve Filibe (2 bölge) haritada birleşik gösterilir.";
+}
+function openR(code,il){cur=code;curIl=il;$("rsel").value=il||code;renderPanel();renderMap();if(innerWidth<900)$("panel").scrollIntoView({behavior:"smooth",block:"start"})}
+function rowsHTML(r,keys){if(!r||!r.valid)return'<div class="note">Henüz oy yok.</div>';
+  var ks=(keys||Object.keys(r.v)).filter(function(k){return r.v[k]}).sort(function(a,b){return r.v[b]-r.v[a]});if(r.none)ks.push("NONE");
+  return ks.map(function(k,i){var v=k==="NONE"?r.none:r.v[k],s=v/r.valid*100,inf=cInfo(k);
+    return'<div class="cand"><div><span style="'+(i===0?"font-weight:700":"")+'">'+esc(inf.n)+'</span><div class="bar"><span style="width:'+s+'%;background:'+inf.c+'"></span></div></div><span style="text-align:right">'+fmt.format(v)+'</span><span style="text-align:right">'+pct(s)+'</span></div>'}).join("")}
+function panelUnit(){var codes=curIl?GEO.L.filter(function(x){return x[0]===curIl})[0][1]:[cur];return{codes:codes,name:curIl?ILN[curIl]:RN[cur]}}
+function renderPanel(){
+  var u=panelUnit(),r=merged(u.codes,DATA.mode==="test"?t1reg:reg),r1=merged(u.codes,t1reg);
+  $("rname").textContent=u.name;
+  $("rstat").textContent=(r.valid?"Geçerli oy: "+fmt.format(r.valid):"Henüz oy yok")+(cur!=="32"&&r.voters&&r.voted?" · katılım: "+pct(r.voted/r.voters*100):"")+(cur==="32"?" · yurt dışında seçmenler kütüğe kayıtlı olmadan da oy verebilir; katılım oranı hesaplanmaz":"");
+  if(DATA.mode==="test"){$("rh1").textContent="1. tur (25 Ekim)";$("rcand").innerHTML=rowsHTML(r1);$("rh2").textContent="";$("rcand1").innerHTML="";return}
+  $("rh1").textContent="2. tur (1 Kasım)"+(DATA.mode==="pre"?" · simülasyon":"");$("rcand").innerHTML=rowsHTML(r,["YOT","GYU","OTH"]);
+  $("rh2").textContent="Karşılaştırma: 1. tur (25 Ekim, kesin)";$("rcand1").innerHTML=rowsHTML(r1,["YOT","GYU","VAZ","MECH","VEL","HRI"]);
+}
+function renderTable(){
+  var test=DATA.mode==="test",codes=CODES;
+  $("rtable").innerHTML='<tr><th>Bölge</th><th class="n">Yotova</th><th class="n">Gyurov</th><th class="n">Fark</th><th class="n">Katılım</th>'+(test?'':'<th class="n">1. tur Yotova</th><th class="n">1. tur Gyurov</th>')+'</tr>'+
+   codes.map(function(c){var r=test?t1reg(c):reg(c),b=t1reg(c),t=r&&r.valid,y=t?r.v.YOT/r.valid*100:0,g=t?r.v.GYU/r.valid*100:0;
+    return'<tr class="click" data-c="'+c+'"><td>'+c+'. '+esc(RN[c])+'</td><td class="n" style="'+(t&&y>g?"font-weight:700;color:var(--YOT)":"")+'">'+(t?pct(y):"–")+'</td><td class="n" style="'+(t&&g>y?"font-weight:700;color:var(--GYU)":"")+'">'+(t?pct(g):"–")+'</td>'+
+     '<td class="n">'+(t?(y>g?"Yotova +":"Gyurov +")+(Math.round(Math.abs(y-g)*10)/10).toLocaleString("tr-TR"):"")+'</td><td class="n">'+(c!=="32"&&r&&r.voters&&r.voted?pct(r.voted/r.voters*100):"–")+'</td>'+
+     (test?'':'<td class="n">'+pct(b.v.YOT/b.valid*100)+'</td><td class="n">'+pct(b.v.GYU/b.valid*100)+'</td>')+'</tr>'}).join("");
+  document.querySelectorAll("#rtable tr.click").forEach(function(t){t.onclick=function(){openR(t.getAttribute("data-c"),null);$("panel").scrollIntoView({behavior:"smooth",block:"start"})}});
+}
+function renderT1(){
+  var t=RAW.t1,tv=t.nat.valid,list=t.cand.filter(function(c){return c[3]/tv>=.015&&c[0]!=="NONE"}),rest=t.cand.filter(function(c){return list.indexOf(c)<0&&c[0]!=="NONE"}),none=t.cand.filter(function(c){return c[0]==="NONE"}),oth=0;rest.forEach(function(c){oth+=c[3]});
+  var mx=list[0][3]/tv*110;
+  $("t1").innerHTML=list.map(function(c){var i=CAND[c[0]]||{n:c[1],c:"var(--O)",w:WIKI},p=c[3]/tv*100;
+    return'<div class="pvrow"><a href="'+i.w+'" target="_blank" rel="noopener" style="color:inherit">'+esc(i.n)+'</a><div class="bar"><span style="width:'+(p/mx*100)+'%;background:'+i.c+'"></span></div><span class="s">'+pct(p)+'</span><span class="v">'+fmt.format(c[3])+'</span></div>'}).join("")+
+    '<div class="pvrow"><span>Diğer '+rest.length+' aday</span><div class="bar"><span style="width:'+(oth/tv*100/mx*100)+'%;background:var(--O)"></span></div><span class="s">'+pct(oth/tv*100)+'</span><span class="v">'+fmt.format(oth)+'</span></div>'+
+    none.map(function(c){var p=c[3]/tv*100;return'<div class="pvrow"><span>'+esc(CAND.NONE.n)+'</span><div class="bar"><span style="width:'+(p/mx*100)+'%;background:var(--NONE)"></span></div><span class="s">'+pct(p)+'</span><span class="v">'+fmt.format(c[3])+'</span></div>'}).join("");
+  $("t1note").textContent="Katılım: "+pct(t.nat.voted/t.nat.voters*100)+" ("+fmt.format(t.nat.voted)+" seçmen), ülke tarihinin en düşüğü. Geçerli oy: "+fmt.format(tv)+". Kaynak: ЦИК kesin sonucu.";
+}
+
+// ---------------- genel ----------------
+var tip=$("tip");
+function tipShow(e,h){tip.innerHTML=h;tip.style.display="block";var x=e.clientX+14,y=e.clientY+14;if(x+300>innerWidth)x=e.clientX-300;if(y+tip.offsetHeight>innerHeight)y=e.clientY-tip.offsetHeight-10;tip.style.left=Math.max(4,x)+"px";tip.style.top=Math.max(4,y)+"px"}
+function tipHide(){tip.style.display="none"}
+function trTime(iso){try{return new Date(iso).toLocaleString("tr-TR",{timeZone:"Europe/Istanbul",day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"})+" (TSİ)"}catch(e){return iso}}
+function renderHeader(){
+  var m=RAW.mode,b=$("badge"),bn=$("banner"),n=DATA.nat;
+  if(m==="pre"){b.className="badge b-sim";b.textContent="SİMÜLASYON";bn.hidden=false;bn.style.background="var(--warnbg)";bn.style.color="var(--warn)";
+    bn.innerHTML="⚠ SİMÜLASYON, gerçek sonuç değil. 2. tur rakamları uydurmadır; sayfanın nasıl çalışacağını göstermek için tarayıcıda rastgele üretilir (çıkış noktası her bölgenin gerçek 1. tur sonucu). Gerçek sonuçlar ЦИК yayımlamaya başlayınca (sandıklar 1 Kasım 21:00 TSİ'de kapanır) kendiliğinden gelir. Simülasyon saati: %"+Math.round(DATA.simT*100);}
+  else if(m==="test"){b.className="badge b-test";b.textContent="TEST · 1. TUR VERİSİ";bn.hidden=false;bn.style.background="var(--testbg)";bn.style.color="var(--test)";
+    bn.textContent="TEST: bu ekran 25 Ekim birinci turunun kesin sonuçlarıyla altyapı denemesidir; ikinci tur sonucu değildir.";}
+  else{b.className="badge b-live";b.textContent=n.done>=100?"GERÇEK VERİ · TÜM TUTANAKLAR":"GERÇEK VERİ · ÖN SONUÇ";bn.hidden=true;}
+  $("duelh").textContent=m==="test"?"Birinci tur (25 Ekim)":"İkinci tur: Gyurov – Yotova";
+  $("subt").textContent=m==="test"?"25 Ekim 2026 · 1. tur · 31 seçim bölgesi + yurt dışı":"1 Kasım 2026 · 2. tur · 31 seçim bölgesi + yurt dışı";
+  $("upd").textContent=(m==="pre"?"1. tur verisi alındı: ":"Son veri değişikliği: ")+trTime(RAW.fetchedAt);
+  $("prog").innerHTML=(n.done!=null?(m==="pre"?"Simüle ":"")+"işlenen tutanak: %"+n.done:(m==="live"?"İşlenen tutanak oranı henüz yayımlanmadı":""))+
+    (n.turnout?'<div class="sub">Katılım: '+pct(n.turnout)+(m==="pre"?" (simüle)":"")+'</div>':'');
+  $("foot").innerHTML="<b>Kaynak:</b> "+esc(RAW.source)+". Seçim gecesi rakamları ЦИК'in işlediği sandık kurulu (СИК) tutanaklarından gelir ve ön sonuçtur; kesin sonucu ЦИК birkaç gün içinde ilan eder. "+
+   "“İşlenen tutanak” sonucu gelen sandık kurullarının oranıdır, oy oranı değildir. İl sınırları: geoBoundaries (CC BY 4.0). Aday bağlantıları: Vikipedi. "+
+   "Ulmocus Seçim bağımsız bir sayfadır; resmî sonuçlar için <a href='https://results.cik.bg/' target='_blank' rel='noopener'>results.cik.bg</a>.";
+}
+function renderAll(){if(!RAW)return;
+  if(RAW.mode==="pre")simulate();else DATA={mode:RAW.mode,nat:RAW.nat,cand:RAW.cand,reg:RAW.reg.map(asReg)};
+  if(DATA.mode==="test")view=1;
+  $("rtabs").innerHTML=DATA.mode==="test"?"":'<button data-v="2"'+(view===2?' class="on"':'')+'>2. tur</button><button data-v="1"'+(view===1?' class="on"':'')+'>1. tur</button>';
+  $("rtabs").querySelectorAll("button").forEach(function(b){b.onclick=function(){view=+b.getAttribute("data-v");renderAll()}});
+  if(!$("rsel").options.length){$("rsel").innerHTML=CODES.map(function(c){return'<option value="'+c+'">'+c+'. '+esc(RN[c])+'</option>'}).join("")+
+    Object.keys(ILN).map(function(k){return'<option value="'+k+'">'+esc(ILN[k])+'</option>'}).join("")}
+  $("rsel").value=curIl||cur;
+  renderHeader();if(DATA.mode==="test")renderTestList();else renderDuel();renderMap();renderPanel();renderTable();renderT1()}
+$("rsel").onchange=function(){var v=this.value;if(ILN[v])openR(GEO.L.filter(function(x){return x[0]===v})[0][1][0],v);else openR(v,null)};
+function refresh(){loadData().then(function(ch){if(ch)renderAll()}).catch(function(e){$("upd").textContent="Veri alınamadı, yeniden denenecek ("+e.message+")"})}
+refresh();
+setInterval(refresh,90000);
+setInterval(function(){if(RAW&&RAW.mode==="pre")renderAll()},4000);
+</script>
+</body>
+</html>
